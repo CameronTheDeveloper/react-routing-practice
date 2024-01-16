@@ -3,9 +3,6 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import Profile from "./components/Profile";
-import DefaultProfile from "./components/DefaultProfile";
-import Spinach from "./components/Spinach";
-import Popeye from "./components/Popeye";
 
 const router = createBrowserRouter([
   {
@@ -13,13 +10,8 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "profile",
+    path: "profile/:name",
     element: <Profile />,
-    children: [
-      {index: true, element: <DefaultProfile />},
-      { path: "spinach", element: <Spinach /> },
-      { path: "popeye", element: <Popeye /> },
-    ],
   },
 ]);
 
