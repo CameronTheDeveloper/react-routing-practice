@@ -13,7 +13,7 @@ const App = () => {
       <nav>
         <ul>
           <li>
-            <Link to="profile">Profile page</Link>
+            <Link to="profile/popeye">Profile page</Link>
           </li>
         </ul>
       </nav>
